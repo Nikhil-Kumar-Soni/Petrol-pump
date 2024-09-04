@@ -1,0 +1,447 @@
+body{
+  /* margin: 2px;
+  padding: 2px; */
+  text-decoration-color: rgb(0, 0, 0);
+  background: #f9f9f9;
+  font-size: 16px;
+  /* line-height: 1; */
+  font-weight: 400;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  font-family: serif;
+  row-gap: 5px;
+}
+* {
+  text-align: center;
+}
+header{
+  box-shadow: 0px 0px 1px rgb(25, 25, 25);
+}
+.header-one{
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* margin-bottom: 10px; */
+  /* background-color: #9d5151; */
+}
+.logo_container img{
+  width:200px;
+  height: auto;
+}
+.lg-img img{
+  display: none;
+  width: 200px;
+  height: auto;
+}
+.menu-icon {
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+   cursor: pointer; 
+  display: none; 
+}
+.bgc-img{
+  background-image: url(Images/19.jpg);
+  background-size: cover;
+  background-position: right;
+  color: rgb(0, 0, 0);
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.menu-button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; 
+  /* padding: 10px; */
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 15px;
+  height: 20px;
+}
+
+/* Initially hide the list of options */
+.menu-options {
+  display: none; 
+  position: absolute; 
+  top: 100%;
+  list-style: none; 
+  margin: 0; /* Removes default margins */
+  padding: 0; /* Removes default padding */
+  background:transparent;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+  z-index: 10; 
+}
+.menu-options a:hover{
+  text-decoration:underline;
+  text-decoration-color: black;
+  color: blue;
+  transition:0.5s;
+  transform: scale(1.2);
+}
+
+/* Style for each list item */
+.menu-options li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; 
+  /* width: 30px; */
+}
+
+/* Style for links */
+.menu-options li a {
+  color: #333;
+  text-decoration: none; 
+  display: block;
+}
+
+/* Hover or focus on the menu button displays the options */
+.menu-button:hover .menu-options,
+.menu-button:focus-within .menu-options {
+  display: block; /* Shows the list */
+}
+
+/* Hover effect for list items */
+.menu-options li:hover {
+  background-color: #f0f0f0; /* Changes background on hover */
+}
+
+.img-nav{
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  margin-bottom: 10px;
+  /* background-color: #9d5151; */
+}
+
+.search-follow{
+/* padding: 0px; */
+  margin: 10px;
+  width: 200px;
+  height: 100px;
+  /* display:inline-block;
+  */
+  text-align: center;
+}
+.follow ul li a{
+  margin-left: 5px;
+  text-decoration: none;
+  color: rgb(30, 18, 18);
+}
+.follow ul li a:hover{
+  transition:0.3s;
+  transform: scale(1.2);
+}
+.follow ul{  
+width: 20px;
+display: flex;
+position: relative;
+/* top: -5px; */
+  list-style: none;
+}
+.header-photo{
+/* width: 500px; */
+height: auto;
+}
+.photo-1{
+  text-align:right;
+  align-items:end;
+  justify-content: flex-end;
+  margin-top: 10px;
+  display: flex;
+}
+#H4{
+  justify-content: flex-end;
+text-align:right;
+align-items:end;
+}
+.oil_home3 img{
+  width: 150px;
+  /* height: 100px; */
+}
+.Oil_Home2 img{
+  width:180px;
+  /* height: auto; */
+}
+#H4 img{
+  width: 320px;
+}
+
+.list-section{
+  background-color: rgb(237, 235, 247);
+  position:sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.shown-list{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.shown-list li {
+  display: inline;
+}
+.shown-list a {
+  font-weight: 500;
+  display: block;
+  padding: 15px 1px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+}
+.shown-list a:hover{
+  transition:0.3s;
+  transform: scale(1.2);
+  background-color: black;
+  color: yellow;
+  border-radius: 10px;
+  text-decoration: underline;
+}
+.menu-toggle {
+  display: none;
+  color: rgb(0, 0, 0);
+  padding: 14px;
+  cursor: pointer;
+}
+
+.hidden-list {
+  display: none;
+  list-style-type: none;
+}
+
+.btn{
+  border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 2px 3px 2px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    text-transform:lowercase;
+}
+.btn:hover{
+  background-color: #5e5e5e;
+  color: rgb(255, 255, 0);
+  transition:0.3s;
+  transform: scale(1.2);
+}
+.button1{
+  position:relative;
+    top: 10px;
+    left: 420px;
+    height: 50px;
+}
+.notes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.note-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 5px;
+  width: 288px;
+  height: 238px;
+  background-color: #b1abab;
+  border-radius: 15px;
+}
+.test h2{
+  background-color: #000000;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.test p{
+  text-align: left;
+  margin-bottom: 50px;
+}
+.test{
+  position: relative; 
+  padding:5px;
+  /* height: 200px; */
+}
+ 
+.button2 {
+  position: absolute;
+  bottom: 15px;
+  left: 12px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.button2:hover {
+  background-color: #8c8585;
+  color: rgb(77, 255, 0);
+}
+.main-second{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.for-photos{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 5px;
+  width: 288px;
+  height: 238px;
+  background-color: #200000;
+  border-radius: 15px;
+}
+.for-notes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 5px;
+  width: 288px;
+  height: 238px;
+  background-color: #200000;
+  border-radius: 15px;
+  color: white;
+}
+.main-secondFor-image img{
+  width: 288px;
+  height: 238px;
+  border-radius: 15px;
+}
+.main-second-for-notes h2{
+color: black;
+background-color: rgb(220, 220, 220);
+border-radius: 15px;
+margin-bottom: 10px;
+}
+.main-second-for-notes p{
+  text-align: left;
+  margin-bottom: 50px;
+}
+.button3 {
+  position: relative;
+  bottom: 50px;
+  left: 80px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: rgb(225, 255, 214);
+}
+.button3:hover {
+  background-color: #000000;
+  color: rgb(247, 255, 6);
+}
+.heaedin-second{
+  height: fit-content;
+  background-color: #ececec;
+  text-align: center;
+  border-radius: 10px;
+  display: grid;
+}
+.heaedin-second h2{
+  text-decoration: underline;
+}
+.photo-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.photo-end{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+    background-color: #fbf2c1;
+    border-radius: 15px;
+    color: #120000;
+    margin: 10px;
+}
+
+.photo-end img{
+  border-radius: 15px;
+}
+
+.footer_container{
+  display: flex;
+  justify-content: space-between;
+  background-color: #b0b0b0;
+  border-radius: 10px;
+}
+
+.footer_coloum {
+  width: 30%;
+}
+
+.footer_coloum ul {
+  display: block; 
+ 
+  }
+  .footer_coloum ul li{
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: small;
+  }
+
+.footer_coloum ul a{
+  text-decoration: none;
+  color: black;
+}
+.footer_coloum ul a:hover{
+  text-decoration: underline;
+  text-decoration-color: rgb(13, 0, 155);
+  color: rgb(15, 0, 174);
+}
+
+.footer_coloum h3 {
+  cursor: pointer; 
+  font-size: small;
+}
+.footer_coloum h3:hover{
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 23, 155);
+  color: rgb(15, 0, 174);
+   transition:0.3s;
+  transform: scale(1.2);
+}
+ 
+.footer2{
+  position:relative;
+  min-width: 250px;
+  text-align: center;
+
+}
+.foot{
+  border-radius: 10px;
+  background-color: #d7d2d2;
+}
+.foor2{
+  font-size: 500;
+}
+.footer3{
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+.footer3 a{
+  color: black;
+  text-decoration: none;
+}
+.footer3 a:hover{
+  text-decoration: underline;
+  text-decoration-color: rgb(13, 0, 155);
+  color: rgb(15, 0, 174);
+}
