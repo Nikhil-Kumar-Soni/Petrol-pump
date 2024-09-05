@@ -15,7 +15,7 @@
   background-position: right;
   color: rgb(0, 0, 0);
   position: relative;
-  width:400px ;
+  /* width:400px ; */
   height: 90px;
 }
 
@@ -63,8 +63,8 @@ right:30px;
 .hidden-list {
   display: none;
 }
-.shown-list li:nth-child(n+9) {
-  display: none; /* Hide options after 8 in mobile view */
+.shown-list li:nth-child(n+7) {
+  display: none; /* Hide options after 6 in mobile view */
 }
 .menu-toggle {
   width: 1px;
