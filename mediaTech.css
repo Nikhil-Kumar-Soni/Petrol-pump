@@ -123,8 +123,9 @@ height: 50px;
   font-size: xx-small;
   text-size-adjust:unset;
 }
-.footer_container{
-  flex-direction: column;
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;
 }
 .footer-column ul {
   display: none; 
