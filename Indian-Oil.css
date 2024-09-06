@@ -128,7 +128,7 @@ header{
 .search_bar{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content:center;
   align-items: center;
 }
 .follow ul li a{
@@ -386,13 +386,10 @@ margin-bottom: 10px;
 
 .footer_coloum {
   width: 30%;
-   margin: 5px;
+  margin: 5px;
+  text-align: left;
+  display: inline-block;
 }
-
-.footer_coloum ul {
-  display: block; 
- 
-  }
   .footer_coloum ul li{
     text-align: left;
     text-decoration: none;
@@ -411,8 +408,9 @@ margin-bottom: 10px;
 }
 
 .footer_coloum h3 {
+  text-align: left;
   cursor: pointer; 
-font-size: x-small;  
+  font-size: x-small;
 }
 .footer_coloum h3:hover{
   text-decoration: underline;
