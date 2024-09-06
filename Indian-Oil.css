@@ -386,6 +386,7 @@ margin-bottom: 10px;
 
 .footer_coloum {
   width: 30%;
+   margin: 5px;
 }
 
 .footer_coloum ul {
@@ -396,7 +397,7 @@ margin-bottom: 10px;
     text-align: left;
     text-decoration: none;
     list-style-type: none;
-    font-size: small;
+    font-size: x-small;
   }
 
 .footer_coloum ul a{
@@ -411,7 +412,7 @@ margin-bottom: 10px;
 
 .footer_coloum h3 {
   cursor: pointer; 
-  font-size: small;
+font-size: x-small;  
 }
 .footer_coloum h3:hover{
   text-decoration: underline;
